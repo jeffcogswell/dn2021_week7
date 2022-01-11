@@ -3,9 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelChange", "ModelChange\ModelChange.csproj", "{801B09D3-25B1-4556-9809-252798A7D75D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelChange", "ModelChange\ModelChange.csproj", "{801B09D3-25B1-4556-9809-252798A7D75D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerAPIDemo", "ServerAPIDemo\ServerAPIDemo.csproj", "{CD3108EE-95F9-428B-9E6B-D5D6AECDB30E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerAPIDemo", "ServerAPIDemo\ServerAPIDemo.csproj", "{CD3108EE-95F9-428B-9E6B-D5D6AECDB30E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D670E419-E4B1-486A-8D43-0B2B84A7E136}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab7_1_Movies", "Lab7_1_Movies\Lab7_1_Movies.csproj", "{3FC6197F-1FEC-4CBF-9BD5-71DD5466C9A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSPractice", "JSPractice\JSPractice.csproj", "{74A7004A-9EEE-472D-8979-3AF7D26369F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +30,14 @@ Global
 		{CD3108EE-95F9-428B-9E6B-D5D6AECDB30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD3108EE-95F9-428B-9E6B-D5D6AECDB30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD3108EE-95F9-428B-9E6B-D5D6AECDB30E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FC6197F-1FEC-4CBF-9BD5-71DD5466C9A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FC6197F-1FEC-4CBF-9BD5-71DD5466C9A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FC6197F-1FEC-4CBF-9BD5-71DD5466C9A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FC6197F-1FEC-4CBF-9BD5-71DD5466C9A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74A7004A-9EEE-472D-8979-3AF7D26369F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74A7004A-9EEE-472D-8979-3AF7D26369F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74A7004A-9EEE-472D-8979-3AF7D26369F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74A7004A-9EEE-472D-8979-3AF7D26369F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,122 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Test</title>
+</head>
+<body>
+
+    <script>
+
+        // IMPORTANT!
+        // This code below runs in the browser.
+
+        let name = 'Fred';
+        console.log(`Greetings ${name}`);
+
+        // Variables in JavaScript do not have types
+        // JavaScript *has* types. But variables don't care. They can hold any type.
+        name = 10.5;
+        console.log(name + 5);
+
+        // JavaScript has a few basic "atomic" types
+        //   String
+        //   Number
+        //   Boolean
+
+        name = true;  // false is the other one of course
+        console.log(name);
+
+        name = null;  // "null" is a value that belongs to the type "null"
+        console.log(name);
+
+        name = undefined; // "undefined" is a value that belongs to type "undefined"
+        console.log(name);
+
+        name = ['abc', 10, true, 'xyz'];
+        console.log(name);
+        for (let i = 0; i < name.length; i++) {
+            console.log(`Index ${i} has value ${name[i]}`);
+        }
+
+        let movie = {
+            title: 'Star Wars',
+            genre: ['Sci Fi', 'Western'],
+            description: 'Luke saves the universe',
+            info: function () {
+                console.log(this.title);
+            }
+        };
+        console.log(movie);
+
+        function PrintTitle(mov) {
+            console.log('Here is your movie:');
+            console.log(mov.title);
+        }
+
+        PrintTitle(movie);
+
+        movie.info();
+
+        // Let's practice with functions
+        // Functions are "first class objects."
+
+        function add(x, y) {
+            return x + y;
+        }
+
+        function times(x, y) {
+            return x * y;
+        }
+
+        console.log(add(5, 6));
+        console.log(add('hello', 6));
+        let n1 = add(5, 6);
+        console.log(n1);
+
+        let f2 = add;
+        console.log(f2(3, 4));
+
+        function trycall(x, y, f) {
+            console.log(f(x, y));
+        }
+        trycall(13, 4, add);   // Pass in a 3, 4, and the add function. trycall will call the add function.
+        trycall(13, 4, times); // Pass in a 3, 4, and the times function. trycall will call the times function.
+
+        // UNDERSTAND THESE NEXT THREE LINES
+        // We are handing three things to the trycall function:
+        //  1. The number 13
+        //  2. The number 4
+        //  3. A function for trycall to call, which is called a "callback" function.
+        trycall(13, 4, function (x, y) {
+            return x - y;
+        });
+
+        if (3 < 4) {
+            console.log('Yup, 3 is less than 4');
+        }
+
+        if (3 == 4) {
+            console.log('This should never happen');
+        }
+
+        // example:
+        // CallApi('https://localhost:1234/api/movie/category', function (json) {
+        //     console.log(json);
+        // });
+
+    </script>
+
+    <h1>Hello</h1>
+    <div id="mydiv" style="border: 3px solid black; background-color: aquamarine">
+        This is a div
+    </div>
+
+</body>
+</html>
